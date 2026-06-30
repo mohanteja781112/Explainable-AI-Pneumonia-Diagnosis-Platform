@@ -1,0 +1,13 @@
+{
+  "name": "pneumonia-diagnosis-platform",
+  "version": "1.0.0",
+  "description": "Explainable AI Pneumonia Diagnosis Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python main.py"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
