@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, User, Moon } from 'lucide-react';
+import { Stethoscope } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -33,18 +33,6 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Right Actions */}
-      <div className="flex items-center gap-4">
-        <button className="p-2 rounded-full bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 text-slate-300 hover:text-white transition-all shadow-[0_0_10px_rgba(0,0,0,0.3)]">
-          <Moon className="w-4 h-4" />
-        </button>
-        <button className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 text-slate-300 hover:text-white transition-all">
-          <div className="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-xs font-bold text-white">
-            MT
-          </div>
-          <span className="text-sm font-medium hidden sm:block">Mohan Teja</span>
-        </button>
-      </div>
     </motion.nav>
   );
 };
