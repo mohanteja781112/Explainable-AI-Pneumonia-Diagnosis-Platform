@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ResearchHighlights = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10 border-t border-white/5 mt-12">
+    <div id="about" className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10 border-t border-white/5 mt-12">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-r from-blue-900/20 to-indigo-900/20 rounded-3xl p-8 md:p-12 border border-white/10">
         
         <div className="flex-1">

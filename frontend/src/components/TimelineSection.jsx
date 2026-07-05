@@ -13,7 +13,7 @@ const steps = [
 
 const TimelineSection = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10">
+    <div id="pipeline" className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold text-white mb-4">Transparent AI Pipeline</h2>
         <p className="text-slate-400 max-w-2xl mx-auto">Our end-to-end clinical workflow ensures full transparency, traceability, and interpretability at every stage of the decision-making process.</p>

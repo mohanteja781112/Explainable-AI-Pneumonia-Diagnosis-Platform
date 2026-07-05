@@ -25,9 +25,23 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className="hidden md:flex items-center gap-8">
-        {['Home', 'Analysis', 'Clinical Reports', 'History', 'About'].map((item) => (
-          <a key={item} href="#" className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group">
-            {item}
+        {[
+          { name: 'Home', id: 'home' },
+          { name: 'Analysis', id: 'upload-section' },
+          { name: 'Pipeline', id: 'pipeline' },
+          { name: 'Features', id: 'features' },
+          { name: 'About', id: 'about' }
+        ].map((item) => (
+          <a 
+            key={item.name} 
+            href={`#${item.id}`} 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
+          >
+            {item.name}
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
           </a>
         ))}

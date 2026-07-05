@@ -13,7 +13,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10">
+    <div id="features" className="w-full max-w-7xl mx-auto px-8 py-20 relative z-10">
       
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold text-white mb-4">Why Choose Our AI System?</h2>

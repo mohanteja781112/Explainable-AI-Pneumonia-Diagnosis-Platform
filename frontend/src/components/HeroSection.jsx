@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = ({ onUploadClick }) => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+    <div id="home" className="w-full max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
       
       {/* Background glow effects specific to hero */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"></div>
