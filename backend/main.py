@@ -160,8 +160,7 @@ async def medical_chat(req: ChatRequest):
             "reply": "[Mock Mode] Chatbot is working, but LLM API key is not configured in the .env file! Add your Gemini key to use real AI."}
 
     try:
-        prompt = f"You are a helpful Medical AI assistant specializing in Chest X-Rays and Pneumonia. Keep responses brief, informative, and professional. The user asks: {
-            req.message}"
+        prompt = f"You are a helpful Medical AI assistant specializing in Chest X-Rays and Pneumonia. Keep responses brief, informative, and professional. The user asks: {req.message}"
         response = llm_model.generate_content(prompt)
         return {"reply": response.text}
     except Exception as e:
