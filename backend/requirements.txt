@@ -7,4 +7,4 @@ python-multipart
 opencv-python-headless
 fpdf2
 python-dotenv
-google-genai
+google-generativeai
