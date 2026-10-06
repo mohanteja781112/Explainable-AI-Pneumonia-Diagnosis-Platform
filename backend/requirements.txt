@@ -2,7 +2,7 @@ fastapi
 uvicorn
 tensorflow
 numpy
-pillow
+pillow>=10.0.0
 python-multipart
 opencv-python-headless
 fpdf2
